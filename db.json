@@ -1,3 +1,40 @@
 {
-
+  "users": [
+    {
+      "id": 1,
+      "username": "michaelis",
+      "password": "****",
+      "profileId": 1
+    },
+    {
+      "id": 2,
+      "username": "admin",
+      "password": "admin",
+      "profileId": 1
+    },
+    {
+      "id": 3,
+      "username": "exploit",
+      "password": "test",
+      "profileId": 1
+    },
+    {
+      "id": 4,
+      "username": "super",
+      "password": "test",
+      "profileId": 1
+    },
+    {
+      "id": 5,
+      "username": "guest",
+      "password": "test",
+      "profileId": 1
+    }
+  ],
+  "profiles": [
+    {
+      "id": 1,
+      "name": "administrator"
+    }
+  ]
 }

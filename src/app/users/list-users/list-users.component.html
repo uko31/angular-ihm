@@ -1,0 +1,21 @@
+<h5>User list</h5>
+
+<table>
+  <tr>
+    <th>id</th>
+    <th>username</th>
+    <th>password</th>
+    <th>profileId</th>
+    <th></th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{ user.id }}</td>
+    <td><a [routerLink]="['view', user.id]">{{ user.username }}</a></td>
+    <td>{{ user.password }}</td>
+    <td>{{ user.profileId }}</td>
+    <td>
+      <a [routerLink]="['edit', user.id]">Edit</a>
+      <a [routerLink]="['delete', user.id]">Delete</a>
+    </td>
+  </tr>
+</table>

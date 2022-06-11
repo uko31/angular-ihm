@@ -1,0 +1,25 @@
+<div *ngIf="user">
+  <h5>Edit {{ user.username }}</h5>
+  <form [formGroup]="updateUserForm" (ngSubmit)="onUpdate()">
+
+    <div>
+      <input type="text" formControlName="username" placeholder="Username (required)">
+    </div>
+
+    <div>
+      <input type="password" formControlName="password1" placeholder="Password (leave blank)">
+    </div>
+
+    <div>
+      <input type="password" formControlName="password2" placeholder="Confirm password">
+    </div>
+
+    <div>
+      <input type="hidden" formControlName="profileId" value="1">
+    </div>
+
+    <button type="submit" [disabled]="!updateUserForm.valid">Update User</button>
+    <button (click)="onCancel()">Cancel</button>
+
+  </form>
+</div>

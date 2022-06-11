@@ -1,0 +1,23 @@
+<h5>Create a new user:</h5>
+<form [formGroup]="createUserForm" (ngSubmit)="onCreate()">
+
+  <div>
+    <input type="text" formControlName="username" placeholder="Username (required)">
+  </div>
+
+  <div>
+    <input type="password" formControlName="password1" placeholder="Password (required)">
+  </div>
+
+  <div>
+    <input type="password" formControlName="password2" placeholder="Confirm password">
+  </div>
+
+  <div>
+    <input type="hidden" formControlName="profileId" value="1">
+  </div>
+
+  <button type="submit" [disabled]="!createUserForm.valid">Create User</button>
+  <button (click)="onCancel()">Cancel</button>
+
+</form>
