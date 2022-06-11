@@ -35,6 +35,18 @@
     {
       "id": 1,
       "name": "administrator"
+    },
+    {
+      "id": 2,
+      "name": "users"
+    },
+    {
+      "id": 4,
+      "name": "guests"
+    },
+    {
+      "id": 5,
+      "name": "dummy"
     }
   ]
 }

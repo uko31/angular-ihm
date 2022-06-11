@@ -1,0 +1,12 @@
+<h5>Create a new profile:</h5>
+<form [formGroup]="createProfileForm" (ngSubmit)="onCreate()">
+
+  <div>
+    <input type="text" formControlName="name" placeholder="Profile name (required)">
+  </div>
+
+  <button type="submit" [disabled]="!createProfileForm.valid">Create Profile</button>
+  <button (click)="onCancel()">Cancel</button>
+
+</form>
+

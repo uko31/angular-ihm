@@ -1,0 +1,17 @@
+<h5>Profile list</h5>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Profile</th>
+    <th></th>
+  </tr>
+  <tr *ngFor="let profile of profiles">
+    <td>{{ profile.id }}</td>
+    <td><a [routerLink]="['view', profile.id]">{{ profile.name }}</a></td>
+    <td>
+      <a [routerLink]="['edit', profile.id]">Edit</a>
+      <a [routerLink]="['delete', profile.id]">Delete</a>
+    </td>
+  </tr>
+</table>
